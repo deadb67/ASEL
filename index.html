@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ASEL Cafe Kütahya — Kahve, sıcak yemekler ve lezzetli menü. Şehir Hastanesi içi cafe.">
+  <meta name="keywords" content="ASEL Cafe, Kütahya cafe, kahve, yemek, Kütahya Şehir Hastanesi cafe">
+  <title>ASEL Cafe | Kütahya Cafe</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Poppins', sans-serif; background: #0f172a; color: #e5e7eb; }
+
+    header { background: linear-gradient(135deg, #1f2937, #020617); padding: 60px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 42px; }
+
+    nav { background: rgba(15,23,42,0.95); position: sticky; top: 0; padding: 14px; text-align: center; }
+    nav a { color: #e5e7eb; margin: 0 18px; text-decoration: none; }
+
+    .layout { display: grid; grid-template-columns: 1fr 3fr 1fr; gap: 20px; max-width: 1300px; margin: 30px auto; }
+
+    .side-images img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      object-fit: cover;
+      height: 180px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    }
+
+    .card { background: rgba(255,255,255,0.03); border-radius: 14px; padding: 25px; backdrop-filter: blur(6px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+
+    h2 { border-left: 4px solid #c084fc; padding-left: 10px; }
+    h3 { color: #c084fc; margin-top: 25px; }
+
+    .menu-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+
+    footer { text-align: center; padding: 25px; background: #020617; margin-top: 30px; font-size: 14px; }
+
+    @media(max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      .side-images { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ASEL Cafe</h1>
+  <p>Kütahya Şehir Hastanesi İçi Premium Cafe ☕</p>
+</header>
+
+<nav>
+  <a href="#menu">Menü</a>
+</nav>
+
+<div class="layout">
+
+  <div class="side-images">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Yemek">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Kahve">
+    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d" alt="Burger">
+  </div>
+
+  <div class="card" id="menu">
+    <h2>Menü</h2>
+
+    <h3>🍗 Tavuk Yemekleri</h3>
+    <div class="menu-item"><span>Tavuk Döner</span><span>190₺</span></div>
+    <div class="menu-item"><span>Tavuk Tantuni</span><span>180₺</span></div>
+    <div class="menu-item"><span>Tavuk Izgara</span><span>230/290₺</span></div>
+    <div class="menu-item"><span>Kremalı Tavuk</span><span>270/300₺</span></div>
+    <div class="menu-item"><span>Tavuk Şinitzel</span><span>250₺</span></div>
+    <div class="menu-item"><span>Kremalı Tavuk Sarma (Krepli)</span><span>300₺</span></div>
+
+    <h3>🍔 Fast Food</h3>
+    <div class="menu-item"><span>Çıtır Tavuk Burger</span><span>200₺</span></div>
+    <div class="menu-item"><span>Hamburger</span><span>200₺</span></div>
+    <div class="menu-item"><span>Cheeseburger</span><span>220₺</span></div>
+    <div class="menu-item"><span>Izgara Köfte</span><span>200/270₺</span></div>
+    <div class="menu-item"><span>İzmir Kumru</span><span>170₺</span></div>
+
+    <h3>🥪 Tost & Atıştırmalık</h3>
+    <div class="menu-item"><span>Tost Karışık</span><span>110₺</span></div>
+    <div class="menu-item"><span>Tost Sucuklu</span><span>100₺</span></div>
+    <div class="menu-item"><span>Tost Kaşarlı</span><span>100₺</span></div>
+    <div class="menu-item"><span>Soğan Halkası</span><span>80₺</span></div>
+    <div class="menu-item"><span>Patso</span><span>120₺</span></div>
+    <div class="menu-item"><span>Patates Kızartması</span><span>110₺</span></div>
+
+    <h3>🍳 Kahvaltı</h3>
+    <div class="menu-item"><span>Menemen</span><span>130₺</span></div>
+    <div class="menu-item"><span>Omlet</span><span>100₺</span></div>
+
+    <h3>🌯 Diğer</h3>
+    <div class="menu-item"><span>Çiğ Köfte (Dürüm)</span><span>120₺</span></div>
+    <div class="menu-item"><span>Çiğ Köfte (Porsiyon)</span><span>210₺</span></div>
+  </div>
+
+  <div class="side-images">
+    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Yemek">
+    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187" alt="Tatlı">
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Kahve">
+  </div>
+
+</div>
+
+<footer>
+  © 2026 ASEL Cafe — Kütahya
+</footer>
+
+</body>
+</html>
